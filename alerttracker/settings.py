@@ -3,7 +3,11 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "local-testing-only-change-before-deployment"
 DEBUG = True
-ALLOWED_HOSTS = ["127.0.0.1", "localhost"]
+ALLOWED_HOSTS = [
+    "127.0.0.1",
+    "localhost",
+    "dynatrace-alert-tracker-no-login-b5.vercel.app",
+]
 
 INSTALLED_APPS = [
     "django.contrib.contenttypes",
